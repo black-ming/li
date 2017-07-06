@@ -1,0 +1,293 @@
+@charset "utf-8";
+
+/*重置样式*/
+*{
+	margin:0;
+	padding:0;
+}
+html,body{
+	height:100%;
+}
+
+.hide{display: none;}
+
+/*公共部分样式*/
+#wrap{
+	width: 100%;
+	height: 100%;
+	max-width:1349px;
+	min-width: 520px;
+	margin:0 auto;
+	position: relative;
+	overflow: hidden;
+}
+.main{
+	height: 100%;
+	position: relative;
+}
+.page{	
+	width: 100%;
+	height:100%;
+	margin:0 auto;
+	position:absolute;left:0;top:0;z-index:99;
+	transition:all 1s ease;
+}
+
+.page_1{background-color:#A9C3DD;}
+.page_2{background-color:#A9C3DD;}
+.page_3{background-color:#A9C3DD;}
+/*.page_4{background-color:#A9C3DD;}*/
+.page_5{background-color:#A9C3DD;}
+
+/*无限循环*/
+.infinite{animation-iteration-count:infinite;}
+/*延迟时间*/
+.delay-time{animation-delay:1s;}
+/*page页在屏幕下面*/
+.pageDown{transform:translateY(100%);} 
+/*page页在屏幕上面*/
+.pageUp{transform:translateY(-100%);} 
+
+/*第一页的样式*/
+.main .page_1 .jj{
+	position: absolute;
+	top:10px;
+	left:50px;
+	text-align:center;
+	color:white;
+	transform: perspective-3d;
+}
+.page_1 .jj img{
+	position: absolute;
+	top:10px;
+	left:750px;
+	border-radius: 10px;
+}
+.page_1 .jj p{
+	display:block;
+	width:500px;
+	height:45px;
+	line-height: 45px;
+	font-size:25px;
+	font-weight:bold;
+}
+.page_1 .jj #p1{
+	background-color:red;
+}
+.page_1 .jj #p2{
+	background-color:orange;
+}
+.page_1 .jj #p3{
+	background-color:yellow;
+}
+.page_1 .jj #p4{
+	background-color:green;
+}
+.page_1 .jj #p5{
+	background-color:black;
+}
+.page_1 .jj #p6{
+	background-color:blue;
+}
+.page_1 .jj #p7{
+	background-color:purple;
+}
+.page_2{
+	position: relative;
+}
+.page_2 #img1{
+	display: block;
+	width:600px;
+	height:270px;
+	position: absolute;
+	top:30px;
+	right:30px;
+}
+.page_2 #img1:hover{
+	position: absolute;
+	top:0px;
+	right:0px;
+	width:100%;
+	height:100%;
+	z-index: 3;
+	cursor: pointer;
+	transition:all;
+	transition-duration:3s;
+}
+.page_2 #img2{
+	display: block;
+	width:600px;
+	height:270px;
+	position: absolute;
+	top:360px;
+	right:30px;
+}
+.page_2 #img2:hover{
+	position: absolute;
+	top:0px;
+	right:0px;
+	width:100%;
+	height:100%;
+	z-index: 3;
+	cursor: pointer;
+	transition:all;
+	transition-duration:3s;
+}
+.page_2 #img3{
+	display: block;
+	width:600px;
+	height:270px;
+	position: absolute;
+	top:360px;
+	left:30px;
+}
+.page_2 #img3:hover{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index: 3;
+	cursor: pointer;
+	transition:all;
+	transition-duration:3s;
+}
+.page_2 p:nth-child(1){
+	position: absolute;
+	top:10px;
+	left:300px;
+	font-size:40px;
+	color:blue;
+}
+.page_2 p:nth-child(2){
+	position: absolute;
+	top:70px;
+	left:140px;
+	font-size:40px;
+	color:red;
+}
+.page_2 p:nth-child(3){
+	position: absolute;
+	top:140px;
+	left:10px;
+	font-size:19px;
+	color:green;
+}
+.page_3 p{
+	position: absolute;
+	top:20px;
+	left:45%;
+	font-size:40px;
+}
+.page_3 .o-1{
+	position: absolute;
+	top:100px;
+	left:42.5%;
+	font-size:60px;
+}
+.page_3 a{
+	font-size:20px;
+	position: relative;
+	top:45%;
+	left:17%;
+	margin:15px;
+}
+.page_5 #img4{
+	display: block;
+	width:600px;
+	height:270px;
+	position: absolute;
+	top:30px;
+	right:30px;
+}
+.page_5 #img4:hover{
+	position: absolute;
+	top:0px;
+	right:0px;
+	width:100%;
+	height:100%;
+	z-index: 3;
+	cursor: pointer;
+	transition:all;
+	transition-duration:3s;
+}
+.page_5 #img5{
+	display: block;
+	width:600px;
+	height:270px;
+	position: absolute;
+	top:360px;
+	right:30px;
+}
+.page_5 #img5:hover{
+	position: absolute;
+	top:0px;
+	right:0px;
+	width:100%;
+	height:100%;
+	z-index: 3;
+	cursor: pointer;
+	transition:all;
+	transition-duration:3s;
+}
+.page_5 #img6{
+	display: block;
+	width:600px;
+	height:270px;
+	position: absolute;
+	top:360px;
+	left:30px;
+}
+.page_5 #img6:hover{
+	position: absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	z-index: 3;
+	cursor: pointer;
+	transition:all;
+	transition-duration:3s;
+}
+.page_5 p:nth-child(1){
+	position: absolute;
+	top:10px;
+	left:300px;
+	font-size:19px;
+	color:blue;
+}
+.page_5 p:nth-child(2){
+	position: absolute;
+	top:40px;
+	left:10px;
+	font-size:19px;
+	color:red;
+}
+.page_5 p:nth-child(4){
+	position: absolute;
+	top:130px;
+	left:300px;
+	font-size:19px;
+	color:blue;
+}
+.page_5 p:nth-child(5){
+	position: absolute;
+	top:160px;
+	left:10px;
+	font-size:19px;
+	color:red;
+}
+.page_5 p:nth-child(7){
+	position: absolute;
+	top:240px;
+	left:300px;
+	font-size:19px;
+	color:blue;
+}
+.page_5 p:nth-child(8){
+	position: absolute;
+	top:270px;
+	left:10px;
+	font-size:19px;
+	color:red;
+}

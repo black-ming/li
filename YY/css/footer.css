@@ -1,0 +1,35 @@
+.footer .content{
+	background-color: #0AA3DD;
+}
+.footer .content .w1{
+	position: absolute;
+	top:32px;
+	left:325px;
+}
+.footer .content .w1 a:visited{
+	color:white;
+}
+.footer .content .w1 a:link{
+	text-decoration: underline;
+}
+.footer .content .w2{
+	position: absolute;
+	top:52px;
+	left:354px;
+}
+.footer .content .w2 a:visited{
+	color:white;
+}
+.footer .content .w2 a:link{
+	text-decoration: underline;
+}
+.footer .content .w3{
+	position: absolute;
+	top:32px;
+	left:455px;
+}
+.footer .content .w4{
+	position: absolute;
+	top:52px;
+	left:489px;
+}
